@@ -1,8 +1,11 @@
 void setup() {
 	size(500, 500);
+  
+
 }
 
 void draw() {
+  
 // Step 1: Write code that draws the following screenshots 
 // with hard-coded values. (Feel free to use colors 
 // instead of grayscale.)
@@ -16,10 +19,28 @@ void draw() {
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
 
-  background(255);
+ 
   stroke(0);
-
-
   
+  fill(random(1,225),random(1,225),random(1,225));
+  ellipse(mouseX + random(1,50),mouseY - random(1,50),10,10);
+  
+  
+ 
 
 }
+
+
+
+
+
+
+void mousePressed(){
+  background(255);
+fill(random(1,225),random(1,225),random(1,225));
+  rect(random(1,400),random(1,400),random(1,400),random(1,400));
+
+
+ }
+
+
